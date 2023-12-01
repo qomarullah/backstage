@@ -19,7 +19,7 @@ import {
   createExtension,
   coreExtensionData,
   createExtensionInput,
-  coreComponentsRefs,
+  coreComponentRefs,
   useApi,
   componentsApiRef,
 } from '@backstage/frontend-plugin-api';
@@ -43,7 +43,7 @@ export const CoreRoutes = createExtension({
     const Routes = () => {
       const componentsApi = useApi(componentsApiRef);
       const NotFoundErrorPage = componentsApi.getComponent(
-        coreComponentsRefs.notFoundErrorPage,
+        coreComponentRefs.notFoundErrorPage,
       );
 
       const element = useRoutes([

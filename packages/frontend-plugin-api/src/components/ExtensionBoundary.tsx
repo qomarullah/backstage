@@ -29,7 +29,7 @@ import { ErrorBoundary } from './ErrorBoundary';
 // eslint-disable-next-line @backstage/no-relative-monorepo-imports
 import { routableExtensionRenderedEvent } from '../../../core-plugin-api/src/analytics/Tracker';
 import { AppNode, componentsApiRef } from '../apis';
-import { coreComponentsRefs } from './ComponentRef';
+import { coreComponentRefs } from './ComponentRef';
 
 type RouteTrackerProps = PropsWithChildren<{
   disableTracking?: boolean;
@@ -64,9 +64,9 @@ export function ExtensionBoundary(props: ExtensionBoundaryProps) {
   const componentsApi = useApi(componentsApiRef);
 
   const plugin = node.spec.source;
-  const Progress = componentsApi.getComponent(coreComponentsRefs.progress);
+  const Progress = componentsApi.getComponent(coreComponentRefs.progress);
   const fallback = componentsApi.getComponent(
-    coreComponentsRefs.errorBoundaryFallback,
+    coreComponentRefs.errorBoundaryFallback,
   );
 
   // Skipping "routeRef" attribute in the new system, the extension "id" should provide more insight
