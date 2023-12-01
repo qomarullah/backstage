@@ -14,9 +14,14 @@
  * limitations under the License.
  */
 
-export {
-  createExtensionTester,
-  type ExtensionTester,
-} from './createExtensionTester';
+import React from 'react';
+import { screen, waitFor } from '@testing-library/react';
+import { renderInTestApp } from './renderInTestApp';
 
-export { renderInTestApp } from './renderInTestApp';
+describe('renderInTestApp', () => {
+  it('should render the given component in a page', async () => {
+    const Component = () => <div>Test</div>;
+    renderInTestApp(<Component />);
+    await waitFor(() => expect(screen.getByText('Test')).toBeInTheDocument());
+  });
+});
