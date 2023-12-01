@@ -1,5 +1,25 @@
 # @backstage/cli
 
+## 0.25.0-next.2
+
+### Patch Changes
+
+- a3edc18: Updated dependency `vite-plugin-node-polyfills` to `^0.17.0`.
+- 627554e: Updated dependency `@rollup/plugin-node-resolve` to `^15.0.0`.
+- c07cee5: Updated dependency `@rollup/plugin-json` to `^6.0.0`.
+- 2565cc8: Updated dependency `@rollup/plugin-commonjs` to `^25.0.0`.
+- Updated dependencies
+  - @backstage/catalog-model@1.4.3
+  - @backstage/cli-common@0.1.13
+  - @backstage/cli-node@0.2.0
+  - @backstage/config@1.1.1
+  - @backstage/config-loader@1.5.3
+  - @backstage/errors@1.2.3
+  - @backstage/eslint-plugin@0.1.4-next.0
+  - @backstage/integration@1.8.0-next.1
+  - @backstage/release-manifests@0.0.11
+  - @backstage/types@1.1.1
+
 ## 0.25.0-next.1
 
 ### Minor Changes

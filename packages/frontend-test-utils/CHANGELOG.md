@@ -1,5 +1,16 @@
 # @backstage/frontend-test-utils
 
+## 0.1.0-next.2
+
+### Patch Changes
+
+- 818eea4: Updates for compatibility with the new extension IDs.
+- Updated dependencies
+  - @backstage/frontend-app-api@0.4.0-next.2
+  - @backstage/frontend-plugin-api@0.4.0-next.2
+  - @backstage/test-utils@1.4.6-next.1
+  - @backstage/types@1.1.1
+
 ## 0.1.0-next.1
 
 ### Patch Changes
